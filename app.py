@@ -1,14 +1,13 @@
 import streamlit as st
 
 
-
+st.title('Odd-Even Finder')
 
 st.write("""
 # This app will check whether the number given by user is even or odd
 """)
 #Get Input
 
-st.title('Odd-Even Finder')
 
 num  = st.number_input("Enter a Number")
 
@@ -18,7 +17,9 @@ if num ==0 :
   op= "your number is even."
 if num%2 == 1:
   op= "your number is odd."
-else:
+elif num%2 == 0 :
   op= "your number is even." 
-
+esle:
+  op= "Please enter an integer" 
+  
 st.write(op)
