@@ -9,3 +9,13 @@ st.header('Enter your number')
 
 num  = st.number_input("Number")
 
+op = ""
+
+if num ==0 :
+  op= "your number is even."
+if num%2 == 1:
+  op= "your number is even."
+else:
+  op= "your number is odd." 
+
+st.write(op)
