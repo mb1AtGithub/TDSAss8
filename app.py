@@ -19,7 +19,7 @@ if num%2 == 1:
   op= "your number is odd."
 elif num%2 == 0 :
   op= "your number is even." 
-esle:
+else:
   op= "Please enter an integer" 
   
 st.write(op)
